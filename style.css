@@ -10,6 +10,6 @@ body,html {font-size:10px;}
   height: 20rem;
   width: 30rem;
   position: relative;
-  background: url(img/buttons/buttonBox.png);
+  background: url(img/moves/buttonBox.png); 
   background-size: cover no-repeat;
 }
