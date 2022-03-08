@@ -15,3 +15,57 @@ body,html {font-size:10px;}
   left: 11rem;
   
 }
+
+#b1 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 21rem;
+  left: 14rem;
+}
+
+#b2 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 17rem;
+  left: 26rem;
+}
+
+#b3 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 13rem;
+  left: 38rem;
+}
+
+#b4 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 20rem;
+  left: 14rem;
+}
+
+#b5 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 16rem;
+  left: 26rem;
+}
+
+#b6 {
+  height: 4rem;
+  width: 7.5rem;
+  background: url(img/activeButton.png) no-repeat;
+  position: relative;
+  top: 12rem;
+  left: 38rem;
+}
