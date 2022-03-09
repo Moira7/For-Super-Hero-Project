@@ -22,59 +22,43 @@ button1.addEventListener("click", function(e){
     var enemyCurrentHealth = document.getElementById("healthIdicatorA");
     enemyHealth = enemyHealth - heroAttackPower;
     enemyCurrentHealth.setAttribute("style", "width:" + enemyHealth + "%");
-    button1.setAttribute("style", "background: url(img/disabledButton.png)");
-    activeatesCoolDowns(1);
-    checksCoolDowns(1);
+
   }
 });
 
 button2.addEventListener("click", function(e){
   if(b2ActiveCoolDown == false){
     heroAttackPower = heroAttackPower + 2;
-    button2.setAttribute("style", "background: url(img/disabledButton.png)");
-    activeatesCoolDowns(2);
-    checksCoolDowns(2);
+    
   }
 }
 );
 
-function activeatesCoolDowns(buttonToUpdate){
-  if(buttonToUpdate == 1){
+function activatesCooldown(coolDownToUpdate){
+  if(coolDownToUpdate == 1){
     b1ActiveCoolDown = true;
+    button1.setAttribute("style", "background: url(img/disabledButton.png)");
+  }
+  else if(coolDownToUpdate == 2){
+    b2ActiveCoolDown = true;
+    button2.setAttribute("style", "background: url(img/disabledButton.png)");
+  }
+};
+
+function updatesCoolDown(){
+  if(b1ActiveCoolDown == true){
     b1CoolDown++;
   }
-  else if(buttonToUpdate == 2){
-    b2ActiveCoolDown = true;
+  if(b2ActiveCoolDown == true){
     b2CoolDown++;
   }
-
 };
 
-function checksCoolDowns(buttonPressed){
-  if(buttonPressed = 1){
-    if(b2ActiveCoolDown == true){
-     b2CoolDown++; 
-     endsCoolDowns();
-    }
-  }
-  if(buttonPressed = 2){
-    if(b1ActiveCoolDown == true){
-      b1CoolDown++;
-      endsCoolDowns();
-    }
-  }
-};
+function checksForCooldown(){
+  
+}
 
-function endsCoolDowns(){
-  if(b1CoolDown%2 == 0){
-    b1ActiveCoolDown = false;
-    button1.setAttribute("style", "background: url(img/activeButton.png)");
-  }
-  if(b2CoolDown%2 == 0){
-    b2ActiveCoolDown = false;
-    button2.setAttribute("style", "background: url(img/activeButton.png)");
-  }
-};
+
 /*attackButton.addEventListener("click",function(e){
     
     var health = document.getElementById("healthIdicatorA");
