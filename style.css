@@ -23,6 +23,7 @@ body,html {font-size:10px;}
   position: absolute;
   top: 43rem;
   left: 14rem;
+  overflow-wrap: break-word;
 }
 
 #b2 {
